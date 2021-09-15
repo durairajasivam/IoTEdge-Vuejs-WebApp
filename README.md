@@ -3,7 +3,7 @@ IoTEdge-Vuejs-WebApp
 
 ## Description
 
-Deploying Vuejs Webapp as Azure IoTedge Module
+Deploying Vuejs Webapp as a Azure IoTedge Module
 
 
 Take Note!!! as of now (15/9/2021) - IoT Edge does not support Node.js modules using Windows containers.
