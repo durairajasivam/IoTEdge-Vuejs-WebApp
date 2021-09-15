@@ -18,7 +18,7 @@ Transfer your vuejs web app src folder to sample module
 
 ![alt text](https://github.com/durairajasivam/IoTEdge-Vuejs-WebApp/blob/master/modules/images/Src.PNG)
 
-Add vuejs`s dependencies,devDependencies,etc from package.json to iotedge module package.json
+Add vuejs`s dependencies,devDependencies,etc from package.json to iotedge module package.json and change the entry point of the app.(for me main.js)
 
 Configure container registry with env variables
 
