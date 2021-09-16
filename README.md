@@ -1,5 +1,5 @@
-# Project Title
-IoTEdge-Vuejs-WebApp
+# IoTEdge-Vuejs-WebApp
+
 
 ## Description
 
