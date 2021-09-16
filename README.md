@@ -89,6 +89,10 @@ Open command prompt and run "docker ps" to see your module port bindings. for me
 
 ![alt text](https://github.com/durairajasivam/IoTEdge-Vuejs-WebApp/blob/master/modules/images/dockerps.PNG)
 
+
+![alt text](https://github.com/durairajasivam/IoTEdge-Vuejs-WebApp/blob/master/modules/images/docker.PNG)
+
+
 Open your broswer and access the vuejs app using 127.0.0.0:8085 ( for me it is 8080).
 
 ![alt text](https://github.com/durairajasivam/IoTEdge-Vuejs-WebApp/blob/master/modules/images/web%20app%20running%20.PNG)
