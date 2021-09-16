@@ -54,19 +54,28 @@
             "restartPolicy": "always",
             "settings": {
               "image": "${MODULES.SampleModule}",
-              "createOptions":  {                
-                  "HostConfig": {
-                    "PortBindings": {
-                      "8080/tcp": [ 
-                        { 
-                          "HostPort": "8080"
-                        } 
-                      ] 
-                    } 
+              "createOptions": {
+                "HostConfig": {
+                  "PortBindings": {
+                    "8080/tcp": [
+                      {
+                        "HostPort": "8080"
+                      }
+                    ]
                   }
                 }
-            }        
-            
+              }
+            }
+          },
+          "testmodule": {
+            "version": "1.0",
+            "type": "docker",
+            "status": "running",
+            "restartPolicy": "always",
+            "settings": {
+              "image": "${MODULES.testmodule}",
+              "createOptions": {}
+            }
           }
         }
       }
@@ -76,7 +85,8 @@
         "schemaVersion": "1.0",
         "routes": {
           "SampleModuleToIoTHub": "FROM /messages/modules/SampleModule/outputs/* INTO $upstream",
-          "sensorToSampleModule": "FROM /messages/modules/tempSensor/outputs/temperatureOutput INTO BrokeredEndpoint(\"/modules/SampleModule/inputs/input1\")"
+          "sensorToSampleModule": "FROM /messages/modules/tempSensor/outputs/temperatureOutput INTO BrokeredEndpoint(\"/modules/SampleModule/inputs/input1\")",
+          "testmoduleToIoTHub": "FROM /messages/modules/testmodule/outputs/* INTO $upstream"
         },
         "storeAndForwardConfiguration": {
           "timeToLiveSecs": 7200
