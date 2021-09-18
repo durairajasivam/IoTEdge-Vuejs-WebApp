@@ -29,7 +29,7 @@ then configure your env file with crdentials
 ![alt text](https://github.com/durairajasivam/IoTEdge-Vuejs-WebApp/blob/master/modules/images/Env.PNG)
 
 
-## Remeber to set setDefaultPlatform and setDefaultEdgeRuntimeVersion for yuur iotedge module 
+## Remember to set setDefaultPlatform and setDefaultEdgeRuntimeVersion for yuur iotedge module 
 
 Configure docker file like this  (in my case  it is Dockerfile.amd64)
 ```
